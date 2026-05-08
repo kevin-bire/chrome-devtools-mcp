@@ -17,6 +17,7 @@ import {Mutex} from './Mutex.js';
 import {SlimMcpResponse} from './SlimMcpResponse.js';
 import {ClearcutLogger} from './telemetry/ClearcutLogger.js';
 import {bucketizeLatency} from './telemetry/metricUtils.js';
+import {FilePersistence} from './telemetry/persistence.js';
 import {
   McpServer,
   type CallToolResult,
@@ -136,6 +137,7 @@ export async function createMcpServer(
 ) {
   if (serverArgs.usageStatistics) {
     ClearcutLogger.initialize({
+      persistence: new FilePersistence(),
       logFile: serverArgs.logFile,
       appVersion: VERSION,
       clearcutEndpoint: serverArgs.clearcutEndpoint,
