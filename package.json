@@ -15,7 +15,8 @@
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist",
     "rebuild": "npm run clean && npm run build",
-    "lint:fix": "eslint src --ext .ts --fix"
+    "lint:fix": "eslint src --ext .ts --fix",
+    "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
