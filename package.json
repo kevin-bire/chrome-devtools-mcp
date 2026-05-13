@@ -49,5 +49,6 @@
   },
   "bugs": {
     "url": "https://github.com/chrome-devtools/chrome-devtools-mcp/issues"
-  }
+  },
+  "homepage": "https://github.com/chrome-devtools/chrome-devtools-mcp#readme"
 }
