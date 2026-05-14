@@ -47,7 +47,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrome-devtools/chrome-devtools-mcp.git"
+    "url": "https://github.com/andysmith/chrome-devtools-mcp.git"
   },
   "bugs": {
     "url": "https://github.com/chrome-devtools/chrome-devtools-mcp/issues"
